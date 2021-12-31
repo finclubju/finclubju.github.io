@@ -9,8 +9,7 @@ Developer Github      : https://github.com/realspal
 Project Information
 --------------------------------------------------------------------------------------------------------
 Project Website       : https://finclubju.com
-Project Github        : https://github.com/finclubju
-Project Repository    : https://github.com/finclubju/finclubju.github.io
+Project Repository    : **contact developer**
 Project Details       : Website created using HTML, CSS and Bootstrap
 Project Purpose       : Website for Jadavpur University Finance Club (FinClub JU)
 --------------------------------------------------------------------------------------------------------
