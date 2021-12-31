@@ -22,26 +22,26 @@
 </head>
 <body class="d-flex flex-column h-100">
 	<main class="flex-shrink-0">
-		<nav class="navbar navbar-expand-lg navbar-dark " style="width:100%; height:36px; position:fixed; background-color:#0252c9; z-index:1200;">
-                <div class="container px-5" style="background-color:#0252c9; height:36px; z-index:1200;">
+		<nav class="navbar navbar-expand-lg navbar-dark " style="width:100%; height:40px; position:fixed; background-color:#0252c9; z-index:1200;">
+                <div class="container px-5" style="background-color:#0252c9; height:40px; z-index:1200; ">
                     <a href="index.html"><img src="assets/sitelogo2.jpg" height="36px" width="36px"></a>
                     <a class="navbar-brand" href="index.html"><b>FinClub JU</b></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html" style="color:white;">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html" style="color:white;">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html" style="color:white;">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html" style="color:white;">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="newsletter.html" style="color:white;">Newsletter</a></li>
-                            <li class="nav-item dropdown">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#0252c9;"><span class="navbar-toggler-icon" ></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="background-color:#0252c9; ">
+                            <li class="nav-item ms-2 me-2"><a class="nav-link" href="index.html" style="color:white;">Home</a></li>
+                            <li class="nav-item ms-2 me-2"><a class="nav-link" href="contact.html" style="color:white;">Contact</a></li>
+                            <li class="nav-item ms-2 me-2"><a class="nav-link" href="faq.html" style="color:white;">FAQ</a></li>
+                            <li class="nav-item ms-2 me-2"><a class="nav-link" href="blog.html" style="color:white;">Blog</a></li>
+                            <li class="nav-item ms-2 me-2"><a class="nav-link" href="newsletter.html" style="color:white;">Newsletter</a></li>
+                            <li class="nav-item ms-2 me-2 dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">About</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
                                     <li><a class="dropdown-item" href="about.html" style="z-index:200;">About FinClub</a></li>
                                     <li><a class="dropdown-item" href="about.html#the-team" style="z-index:200;">The Team</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
+                            <li class="nav-item ms-2 me-2 dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">Events</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
                                     <li><a class="dropdown-item" href="events.html" style="z-index:200;">View Events</a></li>
@@ -54,7 +54,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="tradingview-widget-container" style="top:36px; position:fixed; background-color:black; z-index:199;">
+            <div class="tradingview-widget-container" style="top:40px; position:fixed; background-color:black; z-index:199;">
 			<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
 			{
 			    "symbols": [
@@ -299,27 +299,31 @@
                         </a>
                     </div>
                     <!-- Call to action-->
-                    <aside class="bg-gradient rounded-3 p-4 p-sm-5 mt-5" style="background-color:#84a6d9;">
-                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                    
+
+                </div>
+            </section>
+            <aside class="bg-gradient p-4 p-sm-5 mt-5" style="background-color:#84a6d9;">
+                        <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
                             <div class="mb-4 mb-xl-0">
                                 <div class="fw-bold" style="color:#0e203b; font-size:40px;">Newsletter</div>
                                 <div style="height:20px;"></div>
-                                <div style="color:#172945; font-size:20px;">Subscribe to our monthly finance newsletter to get exclusive access to our latest articles in your inbox.</div>
+                                <div style="color:#172945; font-size:20px; text-align: justify; text-justify: inter-word;">Subscribe to our monthly finance newsletter to get exclusive access to our latest articles in your inbox.</div>
                                 <div style="height:32px;"></div>
                                 <div><a class="btn btn-primary btn-outline-dark btn-lg px-4" href="newsletter.html#explore" style="color:#172945; background-color:#84a6d9; font-size:18px;">Explore Newsletters</a></div>
                                 
                             </div>
+                        </div>
+                        <div class="col-lg-6">
                             <div class="ms-xl-4">
                                 <div class="input-group mb-2">
-                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSedNBgofSyw4mfKGPLBSTKwgAS_rpoIPzzyQTgvekRrLjzj8w/viewform?embedded=true" width="640" height="380" scrolling="no" style="overflow:hidden;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSedNBgofSyw4mfKGPLBSTKwgAS_rpoIPzzyQTgvekRrLjzj8w/viewform?embedded=true" width="640" height="380" scrolling="yes" style="overflow:hidden; max-width:100%; max-height:100%;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                                 </div>
                             </div>
                         </div>
-                    </aside>
-
-                </div>
-            </section>
-            
+                    </div>
+                </aside>
     </main>
             
     <footer class="bg-dark py-4 mt-auto">
