@@ -2,6 +2,8 @@
 
 This is the repository for the official website of Jadavpur University Finance Club (FinClub JU).
 
+Managed by @realspal (https://github.com/realspal)
+
 --------------------------------------------------------------------------------------------------------
 Developer Information
 --------------------------------------------------------------------------------------------------------
