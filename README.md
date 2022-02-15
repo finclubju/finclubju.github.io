@@ -1,6 +1,6 @@
 # finclubju.com
 
-This is the repository for the official website of Jadavpur University Finance Club (FinClub JU).
+This is the repository for the official website of FinClub JU.
 
 Managed by @realspal (https://github.com/realspal)
 
@@ -28,7 +28,7 @@ Project Website       : https://finclubju.com
 
 Project Details       : Website created using HTML, CSS and Bootstrap
 
-Project Purpose       : Website for Jadavpur University Finance Club (FinClub JU)
+Project Purpose       : Website for FinClub JU
 
 --------------------------------------------------------------------------------------------------------
 
