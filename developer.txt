@@ -11,16 +11,16 @@ Project Information
 Project Website        : https://finclubju.com
 Project Repository     : https://github.com/finclubju/finclubju.github.io
 Project Details        : Website created using HTML, CSS and Bootstrap
-Project Purpose        : Website for Jadavpur University Finance Club (FinClub JU)
+Project Purpose        : Website for FinClub JU
 --------------------------------------------------------------------------------------------------------
 Organization Information
 --------------------------------------------------------------------------------------------------------
-Organization Name      : Jadavpur University Finance Club (FinClub JU)
+Organization Name      : FinClub JU
 Organization Website   : https://finclubju.com
 Organization Details   : https://finclubju.com/about
 Organization Contact   : https://finclubju.com/contact
 Organization Github    : https://github.com/finclubju/finclubju.github.io
-Organization LinkedIn  : https://linkedin.com/company/finance-club-jadavpur-university
+Organization LinkedIn  : https://linkedin.com/company/finclubju
 Organization Twitter   : https://twitter.com/finclubju
 Organization Instagram : https://instagram.com/finclubju
 Organization Facebook  : https://facebook.com/finclubju
