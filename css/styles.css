@@ -11388,7 +11388,7 @@ main .list .item:hover {
 }
   */
   #searchBar {
-    width: 100%;
+    width: 80%;
     height: 46px;
     border-radius: 10px;
     border: 1px solid black;
