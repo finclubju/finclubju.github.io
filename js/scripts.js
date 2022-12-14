@@ -4,12 +4,11 @@ const list_items = [
         heading:"All about Hedge Fund",
         link:"blog/all-about-hedge-funds.html",
         content:"Hedge funds are managed in many developed countries, many of which manage multi-billion dollar portfolios. Participation in hedge...",
-    },
-    {
+    },{
         src:"assets/blog/bg-img-12.jpg",
-        heading:"Impact of Ukraine Russia War on the Global Economy",
-        link:"#",
-        content:"Coming soon...",
+        heading:"Impact of Russia-Ukraine War on the Global Economy",
+        link:"blog/impact-of-russia-ukraine-war-on-the-global-economy.html",
+        content:"Russia’s invasion of Ukraine has not only created immense human suffering, but it is also damaging global trade and will reportedly have major ramifications for the global economy, which is just recovering from the stress of the coronavirus pandemic.",
     },{
         src:"assets/blog/bg-img-11.jpg",
         heading:"Financial Literacy Empowers People, especially Women",
@@ -55,6 +54,16 @@ const list_items = [
         heading:"The Journey Begins",
         link:"blog/the-journey-begins.html",
         content:"Exploring the origins of FinClub, the team's mission and the idea behind the only financial markets oriented club in Jadavpur University...",
+    },{
+        src:"assets/blog/bg-img-14.jpg",
+        heading:"The Indian Economy - Bright Spot on a Dark Horizon",
+        link:"blog/the-indian-economy-bright-spot-on-a-dark-horizon.html",
+        content:"Recently the IMF forecasts the economic growth of countries for the year 2023. While the IMF is fearing an all-time high Recession, India’s GDP Growth has astoundingly peaked at 6.8 % in contrast to that of Developed countries which ranged from 1% to 3%.",
+    },{
+        src:"assets/blog/bg-img-15.jpg",
+        heading:"The Digital Rupee - A Crucial step in India’s digital transformation  ",
+        link:"blog/the-digital-rupee-a-crucial-step-in-india-s-digital-transformation.html",
+        content:"Digital rupee can be exchanged for cash, equivalent to the banknotes that RBI issue in paper form. Digital rupee will be an excellent opportunity for India since it will potentially increase the ease of doing business.",
     },
 ];
 const list_element = document.getElementById('list');
