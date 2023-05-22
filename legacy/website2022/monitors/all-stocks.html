@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215169475-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-215169475-1');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Browser-based Stock Monitor for PC" />
+    <meta name="keywords" content="Jadavpur University, Finance Club, Finance, JU, Club, FinClub, stock market, financial markets, investing, trading, equity, equities, derivative, derivatives, futures, options, commodity, analysis, research, educational" />
+    <meta name="author" content="Jadavpur University Finance Club" />
+    <title>All Stocks | Stock Monitor</title>
+    <link rel="canonical" href="https://finclubju.com/" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+    <meta property="og:title" content="All Stocks | Stock Monitor" />
+    <meta property="og:description" content="Browser-based Stock Monitor for PC" />
+	<meta property="og:url" content="https://finclubju.com/" />
+	<meta property="og:site_name" content="FinClub JU" />
+    <meta property="og:image" content="https://finclubju.com/assets/social/img-sm/monitor1.jpg" />
+    <meta property="og:image:alt" content="" />  
+    <meta property="article:publisher" content="https://www.facebook.com/FinClubJU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@FinClubJU">
+    <meta name="twitter:title" content="All Stocks | Stock Monitor">
+    <meta name="twitter:description" content="Browser-based Stock Monitor for PC">
+    <meta name="twitter:image" content="https://finclubju.com/assets/social/img-sm/monitor1.jpg">
+</head>
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <div class="tradingview-widget-container" style="top:-10px; position:fixed; background-color:black; z-index:200;">
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                { "symbols": [{"description": "SENSEX","proName": "BSE:SENSEX"},
+                                {"description": "SMLCAP","proName": "BSE:SMLCAP"},
+                                {"description": "MIDCAP","proName": "BSE:MIDCAP"},
+                                {"description": "METAL","proName": "BSE:METAL"},
+                                {"description": "POWER","proName": "BSE:POWER"},
+                                {"description": "OILGAS","proName": "BSE:OILGAS"},
+                                {"description": "IT","proName": "BSE:IT"},
+                                {"description": "FMCG","proName": "BSE:FMCG"},
+                                {"description": "BANK","proName": "BSE:BANK"},
+                                {"description": "HC","proName": "BSE:HC"},
+                                {"description": "TELCOM","proName": "BSE:TELCOM"},
+                                {"description": "CG","proName": "BSE:CG"},
+                                {"description": "PSU","proName": "BSE:PSU"},
+                                {"description": "AUTO","proName": "BSE:AUTO"},
+                                {"description": "IPO","proName": "BSE:IPO"},
+                                {"description": "REALTY","proName": "BSE:REALTY"}],
+                    "showSymbolLogo": false,"colorTheme": "dark","isTransparent": true,"displayMode": "regular","locale": "in"
+                }
+            </script>
+        </div>
+        <div style="height:8px;"></div>
+        <iframe width="80%" height="526%" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSvq7wC59pWPUf1KEPvZga2mYswv7h2r7g0z0d4z08aTdzaZMyYK6vcx9zJqgOkkey56SbMkIVjzK1D/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+        <div class="tradingview-widget-container" style="top:58%; right:0px; position:fixed; max-width:20%; background-color:black; z-index:198;">
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+            {
+                "colorTheme": "dark",
+                "dateRange": "12M",
+                "exchange": "BSE",
+                "showChart": false,
+                "locale": "in",
+                "largeChartUrl": "",
+                "isTransparent": true,
+                "showSymbolLogo": false,
+                "showFloatingTooltip": false,
+                "width": "304",
+                "height": "380"
+            }
+            </script>
+        </div>
+        <iframe width="20%" height="60%" style="top:8px; right:0px; position:fixed; z-index:196;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSR4ELpk3dtt4UOf5dzpwvMidzyEutX_9sQoU7GkBAJTzEMuMmnwZymWKtXT8tq0NOIek7yTHdiGx98/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </main>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
