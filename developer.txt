@@ -1,29 +1,33 @@
-Developer Information
---------------------------------------------------------------------------------------------------------
-Developer Name         : Soumyadeep Pal
-Developer Institution  : Jadavpur University (2020-2024 Batch)
-Developer Occupation   : Student, Pursuing B.E. in Information Technology
-Developer LinkedIn     : https://linkedin.com/in/realspal
-Developer Github       : https://github.com/realspal
---------------------------------------------------------------------------------------------------------
-Project Information
---------------------------------------------------------------------------------------------------------
-Project Website        : https://finclubju.com
-Project Repository     : https://github.com/finclubju/finclubju.github.io
-Project Details        : Website created using HTML, CSS and Bootstrap
-Project Purpose        : Website for FinClub JU
---------------------------------------------------------------------------------------------------------
-Organization Information
---------------------------------------------------------------------------------------------------------
-Organization Name      : FinClub JU
-Organization Website   : https://finclubju.com
-Organization Details   : https://finclubju.com/about
-Organization Contact   : https://finclubju.com/contact
-Organization Github    : https://github.com/finclubju/finclubju.github.io
-Organization LinkedIn  : https://linkedin.com/company/finclubju
-Organization Twitter   : https://twitter.com/finclubju
-Organization Instagram : https://instagram.com/finclubju
-Organization Facebook  : https://facebook.com/finclubju
---------------------------------------------------------------------------------------------------------
-Copyright © 2021 Developer. All rights reserved.
---------------------------------------------------------------------------------------------------------
+DEVELOPER INFO
+
+Website - Finance Club, Jadavpur University
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WEBSITE VERSIONS
+
+  •   Version 2.0 - Released Apr 01, 2023 - finclubju.com
+
+  •   Version 1.0 - Released Jan 01, 2022 - finclubju.com/legacy/website2022
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+REPOSITORY
+
+GitHub - github.com/finclubju/finclubju.github.io
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TECHNICAL TEAM
+
+  •   Soumyadeep Pal  	  2020-24 Batch (Undergraduate), Dept. of Information Technology  	  Website v1.0 and v2.0, SEO, FinLabs, Algo Backtesting, Market Data Feeds
+  •   Atanu Nayak  	  2021-25 Batch (Undergraduate), Dept. of Computer Science and Engineering  	  Content Management Automation, Machine Learning Models
+  •   Arindam Halder  	  2020-24 Batch (Undergraduate), Dept. of Information Technology  	  Infinity Trader (Virtual Trading Platform)
+  •   Eshan Chakraborty  	  2021-25 Batch (Undergraduate), Dept. of Computer Science and Engineering  	  Search Feature in Blog, Events, Archives
+  •   Tanmay Roy  	  2021-25 Batch (Undergraduate), Dept. of Information Technology  	  Financial Calculators
+  •   Abhigyan Roy  	  2021-25 Batch (Undergraduate), Dept. of Information Technology  	  Financial Calculators
+  •   Animesh Talukdar  	  2021-25 Batch (Undergraduate), Dept. of Information Technology  	  Financial Calculators
+  •   Sayan Maji  	  2020-24 Batch (Undergraduate), Dept. of Information Technology  	  Maintenance and Updates
+  •   Souvik Saha  	  2021-25 Batch (Undergraduate), Dept. of Power Engineering  	  Maintenance and Updates
+  •   Gourav Dutta  	  2021-25 Batch (Undergraduate), Dept. of Electronics and Telecommunication Engineering  	  Maintenance and Updates
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
