@@ -1,25 +1,15 @@
-/**
-* Template Name: Flattern - v4.10.0
-* Template URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #4d4643;
 }
 
 a {
-  color: #f03c02;
+  color: #c70e0e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fd5c28;
+  color: #dd4d4b;
   text-decoration: none;
 }
 
@@ -29,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Muli", sans-serif;
+  font-family: "Lora", serif;
 }
 
 /*--------------------------------------------------------------
@@ -42,7 +32,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #f03c02;
+  background: #c70e0e;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -56,7 +46,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #fd541e;
+  background: #dd4d4b;
   color: #fff;
 }
 
@@ -118,7 +108,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 50px;
+  height: 40px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -151,7 +141,7 @@ h6 {
 }
 
 .scrolled-offset {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -200,12 +190,12 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #f03c02;
+  background: #c70e0e;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -215,7 +205,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #fd490f;
+  background: #dd4d4b;
 }
 
 .navbar .dropdown ul {
@@ -252,7 +242,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .navbar .dropdown:hover>ul {
@@ -351,7 +341,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .navbar-mobile .getstarted,
@@ -386,7 +376,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -398,10 +388,11 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 96vh;
   overflow: hidden;
   position: relative;
   padding: 0;
+  top: 0px;
 }
 
 #hero .carousel,
@@ -423,10 +414,10 @@ h6 {
   align-items: flex-end;
   justify-content: center;
   position: absolute;
-  bottom: 60px;
-  top: 110px;
-  left: 50px;
-  right: 50px;
+  bottom: 100px;
+  top: 100px;
+  left: 0px;
+  right: 0px;
 }
 
 #hero .carousel-content {
@@ -435,7 +426,7 @@ h6 {
   color: #fff;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  border-top: 5px solid #f03c02;
+  border-top: 5px solid #c70e0e;
 }
 
 #hero .carousel-content h2 {
@@ -446,7 +437,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Muli", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -459,11 +450,11 @@ h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f03c02;
+  border: 2px solid #c70e0e;
 }
 
 #hero .btn-get-started:hover {
-  background: #f03c02;
+  background: #c70e0e;
   color: #fff;
   text-decoration: none;
 }
@@ -601,7 +592,7 @@ section {
 }
 
 .breadcrumbs ol a {
-  color: #fe825a;
+  color: #dd4d4b;
 }
 
 .breadcrumbs ol li+li {
@@ -644,7 +635,7 @@ section {
 }
 
 .cta h3 span {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .cta p {
@@ -653,7 +644,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -664,13 +655,13 @@ section {
   transition: 0.4s;
   margin: 10px;
   border-radius: 4px;
-  border: 2px solid #f03c02;
-  color: #f03c02;
+  border: 2px solid #c70e0e;
+  color: #c70e0e;
   background: #fff;
 }
 
 .cta .cta-btn:hover {
-  background: #f03c02;
+  background: #c70e0e;
   color: #fff;
 }
 
@@ -715,7 +706,7 @@ section {
   text-align: center;
   width: 72px;
   height: 72px;
-  background: #f03c02;
+  background: #c70e0e;
 }
 
 .services .icon i {
@@ -737,15 +728,15 @@ section {
 
 .services .icon-box:hover .icon {
   background: #fff;
-  border: 2px solid #f03c02;
+  border: 2px solid #c70e0e;
 }
 
 .services .icon-box:hover .icon i {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .services .icon-box:hover .title a {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .services .description {
@@ -779,7 +770,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #f03c02;
+  background: #c70e0e;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -826,7 +817,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -852,7 +843,7 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-links a:hover {
-  color: #fe825a;
+  color: #dd4d4b;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
@@ -881,11 +872,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #f03c02;
+  border: 1px solid #c70e0e;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #f03c02;
+  background-color: #c70e0e;
 }
 
 .portfolio-details .portfolio-info {
@@ -956,6 +947,51 @@ section {
   transform: scale(1.1);
 }
 
+.clients .client-data {
+  transition: all 0.2s ease-in-out;
+  padding: 20px;
+  background-color: transparent;
+  border-left: 0.5px solid #28161b;
+  border-right: 0.5px solid #28161b;
+}
+
+.clients .client-data:hover {
+  filter: none;
+  transform: scale(1.01);
+  background: #fff;
+  border-top: 0.5px solid #28161b;
+  border-bottom: 0.5px solid #28161b;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.clients .client-data2 {
+  transition: all 0.2s ease-in-out;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.clients .client-data2:hover {
+  filter: none;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.clients .client-data3 {
+  transition: all 0.2s ease-in-out;
+  padding: 20px;
+  background-color: transparent;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
+
+.clients .client-data3:hover {
+  filter: none;
+  background: #fff;
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -985,7 +1021,7 @@ section {
 .about-us .content .icon-box i {
   font-size: 48px;
   float: left;
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .about-us .content .icon-box p {
@@ -1057,7 +1093,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .team .member .social i {
@@ -1109,7 +1145,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lora", serif;
   color: #2b2320;
 }
 
@@ -1126,7 +1162,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #f03c02;
+  background-color: #c70e0e;
 }
 
 /*--------------------------------------------------------------
@@ -1148,7 +1184,7 @@ section {
 }
 
 .features .nav-link:hover {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .features .nav-link h4 {
@@ -1163,7 +1199,7 @@ section {
 
 .features .nav-link.active {
   box-shadow: 0px 0 15px rgba(0, 0, 0, 0.12);
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .features .tab-pane.active {
@@ -1214,9 +1250,9 @@ section {
 
 .pricing h4 {
   font-size: 42px;
-  color: #f03c02;
+  color: #c70e0e;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1264,18 +1300,18 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Muli", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .pricing .btn-buy:hover {
-  color: #f03c02;
-  border-color: #f03c02;
+  color: #c70e0e;
+  border-color: #c70e0e;
 }
 
 .pricing .featured {
-  background: #fd5c28;
+  background: #dd4d4b;
   box-shadow: none;
 }
 
@@ -1298,7 +1334,7 @@ section {
 }
 
 .pricing .featured .btn-buy:hover {
-  color: #f03c02;
+  color: #c70e0e;
   background: #fff;
   border-color: #fff;
 }
@@ -1317,7 +1353,7 @@ section {
 }
 
 .cta-pricing .cta-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
@@ -1328,13 +1364,13 @@ section {
   transition: 0.4s;
   margin: 10px;
   border-radius: 4px;
-  border: 2px solid #f03c02;
-  color: #f03c02;
+  border: 2px solid #c70e0e;
+  color: #c70e0e;
   background: #fff;
 }
 
 .cta-pricing .cta-btn:hover {
-  background: #f03c02;
+  background: #c70e0e;
   color: #fff;
 }
 
@@ -1414,7 +1450,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #f03c02;
+  color: #c70e0e;
   float: left;
   width: 44px;
   height: 44px;
@@ -1442,7 +1478,7 @@ section {
 }
 
 .contact .info:hover i {
-  background: #f03c02;
+  background: #c70e0e;
   color: #fff;
 }
 
@@ -1460,7 +1496,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #dd4d4b;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1515,7 +1551,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #f03c02;
+  background: #c70e0e;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1524,7 +1560,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #fd5c28;
+  background: #dd4d4b;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1579,7 +1615,7 @@ section {
 }
 
 .blog .entry .entry-title a:hover {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .blog .entry .entry-meta {
@@ -1624,7 +1660,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #f03c02;
+  background: #c70e0e;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -1633,7 +1669,7 @@ section {
 }
 
 .blog .entry .entry-content .read-more a:hover {
-  background: #fd490f;
+  background: #dd4d4b;
 }
 
 .blog .entry .entry-content h3 {
@@ -1688,7 +1724,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .blog .entry .entry-footer .cats {
@@ -1797,7 +1833,7 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .blog .blog-comments .comment h5 .reply {
@@ -1843,7 +1879,7 @@ section {
 
 .blog .blog-comments .reply-form input:focus {
   box-shadow: none;
-  border-color: #fe825a;
+  border-color: #dd4d4b;
 }
 
 .blog .blog-comments .reply-form textarea {
@@ -1854,7 +1890,7 @@ section {
 
 .blog .blog-comments .reply-form textarea:focus {
   box-shadow: none;
-  border-color: #fe825a;
+  border-color: #dd4d4b;
 }
 
 .blog .blog-comments .reply-form .form-group {
@@ -1898,7 +1934,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #f03c02;
+  background: #c70e0e;
 }
 
 .blog .blog-pagination li.active a,
@@ -1949,7 +1985,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #f03c02;
+  background: #c70e0e;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1961,7 +1997,7 @@ section {
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: #fd4509;
+  background: #dd4d4b;
 }
 
 .blog .sidebar .categories ul {
@@ -1979,7 +2015,7 @@ section {
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .blog .sidebar .categories ul a span {
@@ -2009,7 +2045,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #f03c02;
+  color: #c70e0e;
 }
 
 .blog .sidebar .recent-posts time {
@@ -2045,8 +2081,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #f03c02;
-  background: #f03c02;
+  border: 1px solid #c70e0e;
+  background: #c70e0e;
 }
 
 .blog .sidebar .tags ul a span {
@@ -2088,7 +2124,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Muli", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #b4aca8;
 }
 
@@ -2112,7 +2148,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #fd6f41;
+  color: #dd4d4b;
   font-size: 18px;
   line-height: 1;
 }
@@ -2136,7 +2172,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #fd6f41;
+  color: #dd4d4b;
 }
 
 #footer .footer-newsletter {
@@ -2175,7 +2211,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #f03c02;
+  background: #c70e0e;
   color: #fff;
   transition: 0.3s;
   border-radius: 4px 4px 4px 4px;
@@ -2183,7 +2219,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #fd5c28;
+  background: #dd4d4b;
 }
 
 #footer .credits {
@@ -2195,7 +2231,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #f03c02;
+  background: #c70e0e;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -2208,7 +2244,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #fd5c28;
+  background: #dd4d4b;
   color: #fff;
   text-decoration: none;
 }
