@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bond Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>Bond Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="bond-calculator">
+                  <label for="current-price">Current Price</label>
+                  <br />
+                  <input type="number" id="current-price" />
+                  <br />
+
+                  <label for="face-value">Face Value</label>
+                  <br />
+                  <input type="number" id="face-value" />
+                  <br />
+
+                  <label for="coupon-rate">Annual Coupon Rate(%)</label>
+                  <br />
+                  <input type="number" id="coupon-rate" />
+                  <br />
+
+                  <label for="years-to-maturity">Years to Maturity</label>
+                  <br />
+                  <input type="number" id="years-to-maturity" />
+                  <br />
+
+                  <label for="compounding">Compounding</label>
+                  <select id="compounding">
+                    <option value="Semiannually" selected="selected">
+                      Semiannually
+                    </option>
+                    <option value="Annually">Annually</option>
+                  </select>
+                  <br />
+
+                  <button class="btn" id="bond-reset" type="button">
+                    Reset
+                  </button>
+                  <button class="btn" id="bond-calculate" type="button">
+                    Calculate
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <div id="bond-result" hidden>
+                  <p>
+                    <span>Current Yield:&nbsp;&nbsp;</span
+                    ><span id="current-yield"></span>
+                  </p>
+                  <p>
+                    <span>Yield to Maturity:&nbsp;&nbsp;</span
+                    ><span id="yield-to-maturity"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script src="../js/finance-and-investment/bondCalculator.js"></script>
+  </body>
+</html>

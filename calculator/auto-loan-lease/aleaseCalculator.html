@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Lease Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <!--this is the div where the sidebar is imported--->
+        <div id="sidebar"></div>
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>Auto Lease Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="a-lease-calculator">
+                  <label for="vehicle-final-price">Vehicle Final Price</label>
+                  <br />
+                  <input type="number" id="vehicle-final-price" />
+                  <br />
+
+                  <label for="sale-tax">Sales Tax(%)</label>
+                  <br />
+                  <input type="number" id="sale-tax" />
+                  <br />
+
+                  <label for="pay-sales-tax-at-signup"
+                    >Pay Sales Tax at Signup</label
+                  >&nbsp;
+                  <input type="checkbox" id="pay-sales-tax-at-signup" />
+                  <br />
+
+                  <label for="down-payment">Down Payment</label>
+                  <br />
+                  <input type="number" id="down-payment" />
+                  <br />
+
+                  <label for="trade-in-value">Trade-In Value</label>
+                  <br />
+                  <input type="number" id="trade-in-value" />
+                  <br />
+
+                  <label for="amount-owed-on-trade-in"
+                    >Amount Owed on Trade-in</label
+                  >
+                  <br />
+                  <input type="number" id="amount-owed-on-trade-in" />
+                  <br />
+
+                  <label for="interest-rate">Interest Rate (APR%)</label>
+                  <br />
+                  <input type="number" id="interest-rate" />
+                  <br />
+
+                  <label for="lease-term">Lease Term (month)</label>
+                  <br />
+                  <input type="number" id="lease-term" />
+                  <br />
+
+                  <label for="residual-value">Residual Value</label>
+                  <br />
+                  <input type="number" id="residual-value" />
+                  <br />
+
+                  <button class="btn" id="a-lease-reset" type="button">
+                    Reset
+                  </button>
+                  <button class="btn" id="a-lease-calculate" type="button">
+                    Calculate
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <div id="a-lease-result" hidden>
+                  <p>
+                    <span>Sales Tax at Signing: </span
+                    ><span id="sales-tax-at-signup"></span>
+                  </p>
+                  <p>
+                    <span>Lease Price: </span><span id="lease-price"></span>
+                  </p>
+                  <p>
+                    <span>Monthly Depreciation Fee: </span
+                    ><span id="monthly-depreciation-fee"></span>
+                  </p>
+                  <p>
+                    <span>Monthly Lease Fee: </span
+                    ><span id="monthly-lease-fee"></span>
+                  </p>
+                  <p>
+                    <span>Monthly Payment(without Tax): </span
+                    ><span id="monthly-payment"></span>
+                  </p>
+                  <p>
+                    <span>Monthly Tax: </span><span id="monthly-tax"></span>
+                  </p>
+                  <p>
+                    <span>Total Monthly Payment: </span
+                    ><span id="total-monthly-payment"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+      // jQuery code here
+      $(".btnn").click(function () {
+        $(this).toggleClass("click");
+        $(".sidebar").toggleClass("show");
+        $(".main").toggleClass("collapsed");
+      });
+      $(".serv-btn").click(function () {
+        $(this).toggleClass("show1");
+        $(this).next().slideToggle();
+        $(this).find(".second").toggleClass("rotate");
+      });
+      $("nav ul li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+    <script src="../js/auto-loan-lease/aleaseCalculator.js"></script>
+  </body>
+</html>

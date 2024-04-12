@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount and Tax Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>Discount and Tax Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="discount-tax-calculator">
+                  <input
+                    type="radio"
+                    name="discount-or-increase"
+                    id="discount"
+                    checked
+                  />&nbsp;
+                  <label for="discount">Discount</label>
+                  <br />
+
+                  <input
+                    type="radio"
+                    name="discount-or-increase"
+                    id="increase"
+                  />&nbsp;
+                  <label for="increase">Increase</label>
+                  <br /><br />
+
+                  <label for="price">Price</label>
+                  <br />
+                  <input type="number" id="price" />
+                  <br />
+
+                  <label id="percent-up-or-down" for="percent">Percent</label>
+                  <br />
+                  <input type="number" id="percent" />
+                  <br />
+
+                  <label for="sales-tax">Sales tax (%)</label>
+                  <br />
+                  <input type="number" id="sales-tax" />
+                  <br />
+
+                  <button class="btn" type="button" id="dt-reset">Reset</button>
+                  <button class="btn" type="button" id="dt-calculate">
+                    Calculate
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <div id="dt-result" hidden>
+                  <p>
+                    <span id="savings-or-moretopay">Savings: </span
+                    ><span id="difference"></span>
+                  </p>
+                  <p><span>Tax: </span><span id="tax"></span></p>
+                  <p>
+                    <span>Total Payment: </span><span id="total-payment"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+
+    <script src="../js/miscellaneous/dtCalculator.js"></script>
+  </body>
+</html>

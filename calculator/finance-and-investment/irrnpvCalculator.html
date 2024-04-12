@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRR NPV Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>IRR NPV Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="irrnpv-form">
+                  <label for="discount-rate">Discount Rate:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="discount-rate"
+                    name="discount-rate"
+                  /><br /><br />
+
+                  <label for="cash-flow-0">Cash Flow 0:</label>
+                  <br />
+                  <input
+                    type="number"
+                    name="cash-flow-0"
+                    id="cash-flow-0"
+                  /><br />
+
+                  <label for="cash-flow-1">Cash Flow 1:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-1"
+                    name="cash-flow-1"
+                  /><br />
+
+                  <label for="cash-flow-2">Cash Flow 2:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-2"
+                    name="cash-flow-2"
+                  /><br />
+
+                  <label for="cash-flow-3">Cash Flow 3:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-3"
+                    name="cash-flow-3"
+                  /><br />
+
+                  <label for="cash-flow-4">Cash Flow 4:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-4"
+                    name="cash-flow-4"
+                  /><br />
+
+                  <label for="cash-flow-5">Cash Flow 5:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-5"
+                    name="cash-flow-5"
+                  /><br />
+
+                  <label for="cash-flow-6">Cash Flow 6:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-6"
+                    name="cash-flow-6"
+                  /><br />
+
+                  <label for="cash-flow-7">Cash Flow 7:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-7"
+                    name="cash-flow-7"
+                  /><br />
+
+                  <label for="cash-flow-8">Cash Flow 8:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-8"
+                    name="cash-flow-8"
+                  /><br />
+
+                  <label for="cash-flow-9">Cash Flow 9:</label>
+                  <br />
+                  <input
+                    type="number"
+                    id="cash-flow-9"
+                    name="cash-flow-9"
+                  /><br /><br />
+
+                  <input
+                    class="btn"
+                    type="button"
+                    value="Reset"
+                    onclick="reset();"
+                  />
+                  <input
+                    class="btn"
+                    type="button"
+                    value="Calculate"
+                    onclick="calc();"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <div id="irrnpv-result" hidden>
+                  <p>
+                    <span
+                      >Internal Return Rate(IRR):&nbsp;&nbsp;<span
+                        id="result-irr"
+                      ></span
+                    ></span>
+                  </p>
+                  <br />
+                  <p>
+                    <span
+                      >Net Present Value(NPV):&nbsp;&nbsp;<span
+                        id="result-npv"
+                      ></span>
+                    </span>
+                  </p>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+
+    <script src="../js/finance-and-investment/irrnpvCalculator.js"></script>
+  </body>
+</html>

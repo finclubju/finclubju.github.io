@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>401k Save the Max Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form>
+                  <label for="contribution-limit"
+                    >Maximum Contribution Limit (in INR):
+                  </label>
+                  <br />
+                  <input
+                    type="number"
+                    id="contribution-limit"
+                    name="contribution-limit"
+                    required
+                  /><br /><br />
+
+                  <label for="catch-up-box">Check if you are 50+ </label>&nbsp;
+                  <input
+                    type="checkbox"
+                    id="catch-up-box"
+                    onchange="boxChecked()"
+                    name="catch-up-box"
+                  /><br /><br />
+
+                  <label for="catch-up">Catch-up (in INR): </label>
+                  <br />
+                  <input
+                    type="number"
+                    id="catch-up"
+                    name="catch-up"
+                    disabled
+                  /><br /><br />
+
+                  <label for="contribution-to-date"
+                    >Contribution to Date (in INR):
+                  </label>
+                  <br />
+                  <input
+                    type="number"
+                    id="contribution-to-date"
+                    name="contribution-to-date"
+                    required
+                  /><br /><br />
+
+                  <label for="remaining-pay-periods"
+                    >Remaining Pay Periods:
+                  </label>
+                  <br />
+                  <input
+                    type="number"
+                    id="remaining-pay-periods"
+                    name="remaining-pay-periods"
+                    required
+                  /><br /><br />
+
+                  <input
+                    type="button"
+                    value="Calculate"
+                    class="btn"
+                    onclick="calculate()"
+                  />
+                  <button type="button" class="btn">Reset</button>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <!--put all the result related(output) fields here in this div-->
+                <label for="max-contribution"></label>
+                <span type="number" id="max-contribution"></span><br /><br />
+
+                <label for="amount-remaining"></label>
+                <span type="number" id="amount-remaining"></span><br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script src="../js/retirement/stmCalculator.js"></script>
+  </body>
+</html>

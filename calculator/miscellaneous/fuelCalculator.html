@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>Fuel Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="fuel-calculator-1">
+                  <h3>Calculate Fuel Cost</h3>
+                  <br />
+
+                  <label for="fuel-unit-price">Fuel Unit Price</label>
+                  <br />
+                  <input type="number" id="fuel-unit-price" />
+                  <br />
+                  <button
+                    class="btn"
+                    type="button"
+                    id="fuel-unit-price-calculate"
+                  >
+                    Calculate
+                  </button>
+                  <br />
+
+                  <label for="fuel-purchased">Fuel Purchased</label>
+                  <br />
+                  <input type="number" id="fuel-purchased" />
+                  <br />
+                  <button
+                    class="btn"
+                    type="button"
+                    id="fuel-purchased-calculate"
+                  >
+                    Calculate
+                  </button>
+                  <br />
+
+                  <label for="fuel-cost">Fuel Cost</label>
+                  <br />
+                  <input type="number" id="fuel-cost" />
+                  <br />
+                  <button class="btn" type="button" id="fuel-cost-calculate">
+                    Calculate
+                  </button>
+                  <br />
+                  <button
+                    class="btn"
+                    type="button"
+                    onclick="fuelcalculator1reset();"
+                  >
+                    Reset
+                  </button>
+                  <br /><br />
+                </form>
+                <br /><br />
+
+                <form id="fuel-calculator-2">
+                  <h3>Calculate Fuel Economy</h3>
+                  <br />
+
+                  <label for="distance">Distance</label>
+                  <br />
+                  <input type="number" id="distance" />
+                  <br />
+                  <button class="btn" type="button" id="distance-calculate">
+                    Calculate
+                  </button>
+                  <br />
+
+                  <label for="fuel-used">Fuel Used</label>
+                  <br />
+                  <input type="number" id="fuel-used" />
+                  <br />
+                  <button class="btn" type="button" id="fuel-used-calculate">
+                    Calculate
+                  </button>
+                  <br />
+
+                  <label for="fuel-economy">Fuel Economy</label>
+                  <br />
+                  <input type="number" id="fuel-economy" />
+                  <br />
+                  <button class="btn" type="button" id="fuel-economy-calculate">
+                    Calculate
+                  </button>
+                  <br />
+                  <button
+                    class="btn"
+                    type="button"
+                    id="fuel-calculator-2-reset"
+                    onclick="fuelcalculator2reset();"
+                  >
+                    Reset
+                  </button>
+                  <br /><br />
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <div id="fuel-result"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+
+    <script src="../js/miscellaneous/fuelCalculator.js"></script>
+  </body>
+</html>

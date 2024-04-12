@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin and Markup Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>Margin and Markup Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="margin-markup-calculator">
+                  <label for="known-values">Known values</label>
+                  <br />
+                  <select
+                    id="margin-markup-mode"
+                    onchange="margin_markup_mode();"
+                  >
+                    <option value="1" selected>Cost and Revenue</option>
+                    <option value="2">Cost and Profit</option>
+                    <option value="3">Cost and Margin</option>
+                    <option value="4">Cost and Markup</option>
+                    <option value="5">Revenue and Profit</option>
+                    <option value="6">Revenue and Margin</option>
+                    <option value="7">Revenue and Markup</option>
+                    <option value="8">Profit and Margin</option>
+                    <option value="9">Profit and Markup</option>
+                  </select>
+                  <br />
+
+                  <label for="variable-1" id="variable-1-label">Cost:</label>
+                  <br />
+                  <input type="number" id="variable-1" />
+                  <br />
+
+                  <label for="variable-2" id="variable-2-label">Revenue:</label>
+                  <br />
+                  <input type="number" id="variable-2" />
+                  <br />
+
+                  <button class="btn" type="button" id="margin-markup-reset">
+                    Reset
+                  </button>
+                  <button
+                    class="btn"
+                    type="button"
+                    id="margin-markup-calculate"
+                  >
+                    Calculate
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <div id="margin-markup-result" hidden>
+                  <p>
+                    <span>Cost:</span
+                    ><span id="margin-markup-result-cost"></span>
+                  </p>
+                  <p>
+                    <span>Revenue:</span
+                    ><span id="margin-markup-result-revenue"></span>
+                  </p>
+                  <p>
+                    <span>Profit:</span
+                    ><span id="margin-markup-result-profit"></span>
+                  </p>
+                  <p>
+                    <span>Margin:</span
+                    ><span id="margin-markup-result-margin"></span>%
+                  </p>
+                  <p>
+                    <span>Markup:</span
+                    ><span id="margin-markup-result-markup"></span>%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script src="../js/miscellaneous/mmCalculator.js"></script>
+  </body>
+</html>

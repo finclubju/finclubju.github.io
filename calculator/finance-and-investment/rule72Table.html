@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#includeHtml").load("categories.html");
+      });
+    </script>
+    <title>Rule of 72 Table</title>
+  </head>
+  <body>
+    <div class="categories" id="includeHtml"></div>
+
+    <div>
+      <h1 class="heading">Years to Double Investment Table</h1>
+
+      <br>
+  <table border="0" width="60%" cellspacing="3" cellpadding="3">
+    <tr>
+      <th width="33%" align="right"><div id="compoundingLabel" style="font-weight:bold;font-family:Arial;font-size:14px">Interest Rate (%)</div></th>
+      <th width="33%" align="right"><div id="compoundingLabel" style="font-weight:bold;font-family:Arial;font-size:14px">Actual Years</div></th>
+      <th width="33%" align="right"><div id="compoundingLabel" style="font-weight:bold;font-family:Arial;font-size:14px">Rule of 72 Years</div></th>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">0.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">138.98</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">144.00</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">69.66</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">72.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">46.56</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">48.00</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">35.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">36.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">28.07</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">28.80</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">23.45</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">24.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">20.15</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">20.57</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">17.67</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">18.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">15.75</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">16.00</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">14.21</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">14.40</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">12.95</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">13.09</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">11.90</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">12.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">11.01</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">11.08</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">7.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">10.24</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">10.29</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">7.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">9.58</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">9.60</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">8.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">9.01</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">9.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">8.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">8.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">8.47</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">9.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">8.04</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">8.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">9.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">7.64</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">7.58</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">10.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">7.27</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">7.20</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">10.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.94</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.86</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">11.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.64</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.55</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">11.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.37</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.26</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">12.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.12</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">6.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">12.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.88</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.76</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">13.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.67</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.54</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">13.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.47</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.33</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">14.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.29</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.14</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">14.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">5.12</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.97</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">15.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.96</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.80</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">15.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.81</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.65</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">16.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.67</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.50</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">16.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.54</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.36</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">17.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.41</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.24</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">17.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.30</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.11</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">18.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.19</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">18.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">4.08</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.89</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">19.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.98</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.79</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">19.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.89</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.69</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">20.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.80</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.60</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">20.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.72</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.51</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">21.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.64</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.43</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">21.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.56</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.35</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">22.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.49</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.27</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">22.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.42</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.20</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">23.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.35</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.13</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">23.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.28</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.06</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">24.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.22</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">24.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.16</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.94</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">25.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.11</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.88</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">25.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.05</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.82</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">26.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">3.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.77</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">26.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.95</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.72</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">27.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.90</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.67</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">27.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.85</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.62</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">28.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.81</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.57</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">28.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.76</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.53</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">29.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.72</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.48</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">29.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.68</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.44</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">30.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.64</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.40</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">30.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.60</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.36</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">31.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.57</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.32</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">31.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.53</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.29</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">32.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.25</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">32.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.46</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.22</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">33.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.43</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.18</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">33.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.40</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.15</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">34.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.37</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.12</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">34.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.34</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.09</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">35.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.31</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.06</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">35.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.28</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.03</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">36.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.25</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.00</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">36.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.23</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.97</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">37.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.20</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.95</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">37.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.18</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.92</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">38.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.15</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.89</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">38.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.13</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.87</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">39.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.10</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.85</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">39.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.08</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.82</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">40.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.06</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.80</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">40.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.04</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.78</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">41.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.02</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.76</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">41.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">2.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.73</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">42.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.98</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.71</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">42.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.96</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.69</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">43.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.94</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.67</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">43.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.92</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.66</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">44.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.90</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.64</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">44.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.88</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.62</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">45.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.87</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.60</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">45.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.85</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.58</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">46.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.83</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.57</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">46.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.82</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.55</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">47.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.80</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.53</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">47.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.78</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.52</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">48.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.77</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.50</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">48.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.75</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.48</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">49.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.74</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.47</div></td>
+    </tr>
+    
+    <tr bgcolor="">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">49.50</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.72</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.45</div></td>
+    </tr>
+    
+    <tr bgcolor="#AFD3E2">
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">50.00</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.71</div></td>
+      <td width="33%" align="right"><div id="compoundingLabel" style="font-family:Arial;font-size:14px">1.44</div></td>
+    </tr>
+    
+  </table>
+
+    </div>
+
+    
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>Compound Interest Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="ci-calculator">
+                  <label for="principal-amount">Principal Amount</label>
+                  <br />
+                  <input id="principal-amount" type="number" />
+                  <br />
+
+                  <label for="interest-rate">Annual Interest Rate(%)</label>
+                  <br />
+                  <input id="interest-rate" type="number" />
+                  <br />
+
+                  <label for="time">Time(in years)</label>
+                  <br />
+                  <input id="time" type="number" />
+                  <br />
+
+                  <label for="compounding">Compounding</label>
+                  <select id="compounding">
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Semiannually">Semiannually</option>
+                    <option value="Annually" selected="selected">
+                      Annually
+                    </option>
+                    <option value="No Compound">No Compound</option>
+                  </select>
+                  <br />
+
+                  <button class="btn" id="ci-reset" type="button">Reset</button>
+                  <button class="btn" id="ci-calculate" type="button">
+                    Calculate
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <div id="ci-result" hidden>
+                  <p>
+                    <span>Total Principal:&nbsp;&nbsp;</span
+                    ><span id="total-principal"></span>
+                  </p>
+                  <p>
+                    <span>Interest Amount:&nbsp;&nbsp;</span
+                    ><span id="interest-amount"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script src="../js/finance-and-investment/ciCalculator.js"></script>
+  </body>
+</html>

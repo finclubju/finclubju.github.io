@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Increase Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>Salary Increase Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="salary-increase-calculator">
+                  <label for="annual-salary">Annual Salary</label>
+                  <br />
+                  <input type="number" id="annual-salary" />
+                  <br />
+
+                  <label for="annual-increase-rate"
+                    >Annual Increase Rate(%)</label
+                  >
+                  <br />
+                  <input type="number" id="annual-increase-rate" />
+                  <br />
+
+                  <label for="years">Years</label>
+                  <br />
+                  <input type="number" id="years" />
+                  <br />
+
+                  <button
+                    class="btn"
+                    type="button"
+                    id="salary-increase-reset"
+                    onclick="hide()"
+                  >
+                    Reset
+                  </button>
+                  <button
+                    class="btn"
+                    type="button"
+                    id="salary-increase-calculate"
+                    onclick="calc()"
+                  >
+                    Calculate
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <div id="result" style="display: none">
+                  <br />
+                  <table id="resultTable"></table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <script src="../js/miscellaneous/siCalculator.js"></script>
+  </body>
+</html>

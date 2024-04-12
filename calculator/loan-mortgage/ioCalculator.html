@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Only Mortgage Calculator</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <h1>NAV BAR</h1>
+      </div>
+      <div class="wrapper">
+        <div id="sidebar"></div>
+        <!--this is the div where the sidebar is imported--->
+        <div class="main">
+          <div class="show" id="main-screen">
+            <div class="name">
+              <h1>Interest Only Mortgage Calculator</h1>
+            </div>
+            <div class="left">
+              <div class="inp">
+                <!--it is the input div,put all the input fields(inside form) here-->
+                <form id="iom-calculator">
+                  <label for="loan-amount">Loan Amount</label>
+                  <br />
+                  <input type="number" id="loan-amount" />
+                  <br />
+
+                  <label for="interest-only-rate"
+                    >Annual Interest-Only Rate (%)</label
+                  >
+                  <br />
+                  <input type="number" id="interest-only-rate" />
+                  <br />
+
+                  <label for="annual-interest-rate"
+                    >Annual Conventional Interest Rate (%)</label
+                  >
+                  <br />
+                  <input type="number" id="annual-interest-rate" />
+                  <br />
+
+                  <label for="loan-term">Loan Term (in months)</label>
+                  <br />
+                  <input type="number" id="loan-term" />
+                  <br />
+
+                  <button class="btn" id="iom-reset" type="button">
+                    Reset
+                  </button>
+                  <button class="btn" id="iom-calculate" type="button">
+                    Calculate
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="right">
+              <div class="out">
+                <table
+                  id="iom-result"
+                  border="0"
+                  cellspacing="10"
+                  cellpadding="5"
+                  style="font-size: 12px"
+                  hidden
+                >
+                  <tr>
+                    <td valign="top" align="right">&nbsp;</td>
+                    <td valign="top" align="right">Conventional Mortgage</td>
+                    <td valign="top" align="right">Interest Only Mortgage</td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="right">Monthly Payment:</td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="conventional-monthly-payment"
+                    ></td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="interest-only-monthly-payment"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="right">Total Payment:</td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="conventional-total-payment"
+                    ></td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="interest-only-total-payment"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="right">Total Interest:</td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="conventional-total-interest"
+                    ></td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="interest-only-total-interest"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="right">Annual Payment:</td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="conventional-annual-payment"
+                    ></td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="interest-only-annual-payment"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="right">Principal Paid:</td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="conventional-principal-paid"
+                    ></td>
+                    <td
+                      valign="top"
+                      align="right"
+                      id="interest-only-principal-paid"
+                    ></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script>
+        // jQuery code here
+        $(".btnn").click(function () {
+          $(this).toggleClass("click");
+          $(".sidebar").toggleClass("show");
+          $(".main").toggleClass("collapsed");
+        });
+        $(".serv-btn").click(function () {
+          $(this).toggleClass("show1");
+          $(this).next().slideToggle();
+          $(this).find(".second").toggleClass("rotate");
+        });
+        $("nav ul li").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+
+    <script src="../js/loan-mortgage/ioCalculator.js"></script>
+  </body>
+</html>
